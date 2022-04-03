@@ -1,9 +1,9 @@
-function tempo(request, response) {
-    const dynamicDate = new Date();
 
-    carregarDados = function () {
+    
 
-        token = localStorage.getItem("userToken");
+carregarDados = function () {
+
+    token = localStorage.getItem("userToken");
 
         $http({
             method: 'GET',
@@ -17,9 +17,6 @@ function tempo(request, response) {
         });
     };
 
-    response.json({
-        date: dynamicDate.toGMTString()
-    });
-}
+    
 
-export default tempo;
+
